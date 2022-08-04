@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="tela netflix - formularios.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <title>Netflix</title>
+    <script>
+        function comparar(text, password){
+
+            var vEmail = document.getElementById(text).value;
+            var vSenha = document.getElementById(password).value;
+
+            if (vEmail==vSenha) {
+                window.alert("O e-mail e a senha são iguais")
+            }
+
+            else if (vSenha=="") {
+              window.alert("por favor digite a senha.")
+            }
+            else if (vEmail=="") {
+                window.alert("por favor digite o e-mail.")
+            }
+    }
+    </script>
+  </head>
+  <body>
+    <form action="PWEB HTML.html" method="post">
+    <div class="cabecalho">
+      <a href="#">
+        <img src="logo NETFLIX.png" class="logotipo"/>
+      </a>
+    </div>
+
+    <div class="principal">
+      <div class="caixasemitransparente">
+
+        <h2>Entrar</h2>
+
+      <input class="inputCinza" type="text" placeholder="E-mail ou número de telefone" id="idEmail">
+      <br/>
+
+      <input class="inputCinza" type="password" placeholder="senha" id="idSenha">
+      <br/>
+      <br/>
+
+      <input type="submit" value="Entrar" class="botaoVermelho" onclick="comparar ('idEmail', 'idSenha')">
+    <div class="textoAjuda">
+      <br/>
+      <input type="checkbox" name="" value="" id="checkboxLembreDeMim">
+      <label for="checkboxLembreDeMim"> Lembre-se de mim</label>
+      <a class="linkAjuda" href="#"> Precisa de ajuda? </a>
+    </div>
+
+    <div class="text">
+      <a href="#">
+        <img src="facebookicon.png" class="imagemFace">
+      </a>
+      <a href="#">Conectar com Facebook</a>
+      <div class="assinar">
+        <br/>
+        <h3> Novo por aqui?</h3>
+        <a href="#">Assine Agora</a>
+      </div>
+      <br/>
+    </div>
+    </div>
+  </div>
+  </form>
+  </body>
+</html>
